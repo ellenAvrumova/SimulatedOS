@@ -8,7 +8,7 @@ g++  -std=c++17  *.cpp  -o runme; ./runme
 
 <strong>CPU scheduling</strong> is round-robin. Ready-queue is a real first-come-first-serve queue. Each process has a time limit for how long it can use the CPU at once. If a process uses the CPU for a longer time, it goes back to the end of the ready-queue.
  
-For <strong>memory management</strong>, our simulation uses paging. If the memory is full, the least recently used frame is removed from memory. I can ask your library to simulate large amounts of memory (say 64 GB or even more). It is not allowed to represent each byte of memory individually. For example, it is not allowed to use vector with 1000 elements to represent 1000 bytes of memory.
+For <strong>memory management</strong>, our simulation uses paging. If the memory is full, the least recently used frame is removed from memory. Your library must be able to simulate large amounts of memory (say 64 GB or even more). It is not allowed to represent each byte of memory individually. For example, it is not allowed to use vector with 1000 elements to represent 1000 bytes of memory.
 
 <strong>Disk management</strong> is “first-come-first-served”. In other words, all disk I/O-queues are real queues (FIFO).
 
